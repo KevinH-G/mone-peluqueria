@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONE</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- parte principal con logo y navegación -->
+    <header class="Header">
+        <h1 class="Header-h1">
+            <a href="index.html" class="Header-logo">
+                <picture>
+                    <source srcset="assets/Logo_2_white.webp" type="image/webp" />
+                    <source srcset="assets/Logo_2_white.png" type="image/png" />
+                    <img src="assets/Logo_2_white.png" alt="mone beauty studio" class="Header-img" loading="lazy">
+                </picture>
+            </a>
+        </h1>
+        <button class="Hamburger-btn" aria-label="Menú">
+            <svg class="Hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+                <li class="Header-li"><a href="#galeria" class="Header-link">Galería</a></li>
+                <li class="Header-li"><a href="#sobre mi" class="Header-link">Sobre mí</a></li>
+                <li class="Header-li"><a href="#servicios" class="Header-link">Servicios</a></li>
+                <li class="Header-li"><a href="#pedir cita" class="Header-link">Pedir cita</a></li>
+                <li class="Header-li"><a href="#contacto" class="Header-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagen de fondo y texto -->
+    <main class="Main">
+        <section class="Main-fondo">
+            <div class="wrapper">
+                <picture>
+                    <source srcset="assets/Imagen_fondo.webp" type="image/webp" />
+                    <source srcset="assets/Imagen_fondo.jpg" type="image/jpeg" />
+                    <img src="assets/Imagen_fondo.jpg" alt="fondo" class="Fondo-img" loading="lazy"
+                        fetchpriority="high">
+                </picture>
+                <h2 class="Fondo-h2">TE MERECES ESTAR PERFECTA TODOS LOS DÍAS</h2>
+            </div>
+        </section>
+
+        <!-- galeria de imagenes en carrousel -->
+        <section class="Carousel">
+            <h2 id="galeria" class="Carousel-h2">Galería</h2>
+            <div class="Carousel-galery">
+                <div class="Carousel-first">
+                    <picture>
+                        <source srcset="assets/Imagen_1.webp" type="image/webp">
+                        <source srcset="assets/Imagen_1.jpg" type="image/jpeg">
+                        <img src="assets/Imagen_1.jpg" alt="Imagen 1" class="Carousel-img" loading="lazy"
+                            fetchpriority="high">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/Imagen_2.webp" type="image/webp">
+                        <source srcset="assets/Imagen_2.jpg" type="image/jpeg">
+                        <img src="assets/Imagen_2.jpg" alt="Imagen 2" class="Carousel-img" loading="lazy"
+                            fetchpriority="high">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/Imagen_3.webp" type="image/webp">
+                        <source srcset="assets/Imagen_3.jpg" type="image/jpeg">
+                        <img src="assets/Imagen_3.jpg" alt="Imagen 3" class="Carousel-img" loading="lazy"
+                            fetchpriority="high">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/Imagen_4.webp" type="image/webp">
+                        <source srcset="assets/Imagen_4.jpg" type="image/jpeg">
+                        <img src="assets/Imagen_4.jpg" alt="Imagen 4" class="Carousel-img" loading="lazy"
+                            fetchpriority="high">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/Imagen_5.webp" type="image/webp">
+                        <source srcset="assets/Imagen_5.jpg" type="image/jpeg">
+                        <img src="assets/Imagen_5.jpg" alt="Imagen 5" class="Carousel-img" loading="lazy"
+                            fetchpriority="high">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/Imagen_6.webp" type="image/webp">
+                        <source srcset="assets/Imagen_6.jpg" type="image/jpeg">
+                        <img src="assets/Imagen_6.jpg" alt="Imagen 6" class="Carousel-img" loading="lazy"
+                            fetchpriority="high">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/Imagen_7.webp" type="image/webp">
+                        <source srcset="assets/Imagen_7.jpg" type="image/jpeg">
+                        <img src="assets/Imagen_7.jpg" alt="Imagen 7" class="Carousel-img" loading="lazy"
+                            fetchpriority="high">
+                    </picture>
+                    <picture>
+                        <source srcset="assets/Imagen_8.webp" type="image/webp">
+                        <source srcset="assets/Imagen_8.jpg" type="image/jpeg">
+                        <img src="assets/Imagen_8.jpg" alt="Imagen 8" class="Carousel-img" loading="lazy"
+                            fetchpriority="high">
+                    </picture>
+                </div>
+            </div>
+            <button class="Carousel-arrow Prev">←</button>
+            <button class="Carousel-arrow Next">→</button>
+        </section>
+
+        <!-- sección biografia con una imagen  -->
+        <section class="Historia">
+            <h2 id="sobre mi" class="Historia-h2">Sobre mí</h2>
+            <article class="Historia-der">
+
+                <p class="Historia-p">Me llamo Mariana Goshii y soy peluquera con alma de artista y corazón de
+                    psicóloga.
+                    Los inicios de mi carrera en el mundo de la belleza comenzó en el año 2008,
+                    cuando cogí las tijeras por primera vez mientras estudiaba psicología. Desde
+                    entonces, la peluquería se ha convertido en mi verdadera vocación dejando de
+                    ser únicamente un hobby.
+                    En cuanto me di cuenta de ello, no he parada de superarme y ofrecer lo mejor
+                    a mis clientes por ello no he dejado de formarme para mejorar realizando
+                    numerosos cursos:
+                <ul class="Historia-ul">
+                    <li>2010 - Formación avanzada en Wella</li>
+                    <li>2012 - Formación en Londa</li>
+                    <li>2020 - Técnica AirTouch Original Performance del fundador de la técnica</li>
+                    <li>2021 - Reconstrucción capilar con Donatti Professional</li>
+                    <li>2021 - Curso de soluciones orgánicas capilares KACH</li>
+                    <li>2021 - Métodos modernos: alisado de queratina, Botox, reconstrucción</li>
+                    <li>2022 - Curso de tricoscopia: Un conocimiento profundo de la estructura y la
+                        salud del cabello</li>
+                    <li>2024 - Tecnología italiana de extensiones capilares DASHE (nano-cápsulas),
+                        Praga, República Checa</li>
+                </ul>
+                A día de hoy soy propietaria de un salón de belleza “Moné Beauty Studio” en
+                Sant Cugat, Barcelona. Me enorgullece decir que cada uno de mis clientes
+                recibe no sólo un servicio de peluquería, sino una experiencia completa
+                pudiendo disfrutar de un espacio de cuidado personal y estilo.</p>
+            </article>
+            <article class="Img-izq">
+                <picture>
+                    <source srcset="assets/Imagen_historia.webp" type="image/webp">
+                    <source srcset="assets/Imagen_historia.jpg" type="image/jpeg">
+                    <img src="assets/Imagen_historia.jpg" alt="imagen persona" class="Img-historia" loading="lazy"
+                        fetchpriority="high">
+                </picture>
+            </article>
+        </section>
+
+        <!-- servicios estructurados -->
+        <section class="Servicios">
+            <h2 id="servicios" class="Servicos-h2">Servicios</h2>
+
+            <ul class="Servicios-primera lista">
+                <li class="Servicios-1">Corte de Pelo</li>
+                <li class="Servicios-2">Corte Hombre</li>
+                <li class="Servicios-3">Corte Mujer</li>
+                <li class="Servicios-4">Corte Niño</li>
+                <li class="Servicios-5">Incluye lavado, corte y peinado.</li>
+                <li class="Servicios-6">Incluye lavado, corte y peinado.</li>
+                <li class="Servicios-7">Incluye lavado, corte y peinado.</li>
+                <li class="Servicios-8">30€</li>
+                <li class="Servicios-9">50€</li>
+                <li class="Servicios-10">25€</li>
+            </ul>
+
+            <ul class="Servicios-segunda lista">
+                <li class="Servicios-11">Coloración</li>
+                <li class="Servicios-12">Tinte</li>
+                <li class="Servicios-13">Balayage</li>
+                <li class="Servicios-14">Highlight</li>
+                <li class="Servicios-15">AirTouch</li>
+                <li class="Servicios-16">Cambio o actualización del color en toda la longitud. Incluye la
+                    selección profesional del tono, la protección de la estructura capilar y el cuidado
+                    posterior al procedimiento.</li>
+                <li class="Servicios-17">Una técnica de coloración que crea un efecto en el cabello de un
+                    rayo de sol aclarando los mechones de medios a puntas haciendo una
+                    transición natural.</li>
+                <li class="Servicios-18">Una técnica de coloración que consiste en resaltar mechones
+                    individuales en toda la cabeza o en zonas específicas.</li>
+                <li class="Servicios-19">Técnica que consiste en resaltar mechones individuales en toda la
+                    cabeza o en zonas específicas.</li>
+                <li class="Servicios-20">Desde 70€</li>
+                <li class="Servicios-21">Desde 70€</li>
+                <li class="Servicios-22">Desde 70€</li>
+                <li class="Servicios-23">Desde 70€</li>
+            </ul>
+
+            <ul class="Servicios-tercera lista">
+                <li class="Servicios-24">Tratamientos</li>
+                <li class="Servicios-25">Keratina</li>
+                <li class="Servicios-26">Hidratación Profunda</li>
+                <li class="Servicios-27">Bótox</li>
+                <li class="Servicios-28">Extensiones</li>
+                <li class="Servicios-29">Reparación Capilar</li>
+                <li class="Servicios-30">Nanoplastia</li>
+                <li class="Servicios-31">Procedimiento para restaurar y alisar el cabello en profundidad que
+                    utiliza queratina, una proteína natural que forma parte del cabello. Hace que el
+                    cabello quede suave, brillante, manejable y lo protege de la humedad. El efecto
+                    duradero es de hasta 3-5 meses.</li>
+                <li class="Servicios-32">Tratamiento de salón que satura el cabello de hidratación
+                    e ingredientes activos. Restaura la suavidad, el brillo y la elasticidad,
+                    especialmente después de la coloración o de tratamientos agresivos.</li>
+                <li class="Servicios-33">Tratamiento intensivo que restaura la estructura interna del cabello,
+                    lo densifica y lo fortalece. El cabello se vuelve suave, brillante y menos
+                    quebradizo.</li>
+                <li class="Servicios-34">Moderna tecnología de extensiones italiana que garantiza el
+                    aspecto más natural y un uso cómodo. Las cápsulas son de tamaño
+                    microscópico, invisibles al tacto y a los ojos. Adecuadas incluso para cabellos
+                    finos.</li>
+                <li class="Servicios-35">Un programa completo para cabellos muy dañados.
+                    Penetra profundamente en la fibra, restaurándola a nivel celular. El resultado es
+                    un cabello más denso, fuerte y vivo.</li>
+                <li class="Servicios-36">Una alternativa orgánica a la queratina. Alisa, pule y repara el
+                    cabello sin formaldehído. Es adecuado incluso para pieles sensibles y cabellos
+                    teñidos. Tiene un efecto curativo y un aspecto natural.</li>
+                <li class="Servicios-37">Desde 100€</li>
+                <li class="Servicios-38">Desde 100€</li>
+                <li class="Servicios-39">Desde 100€</li>
+                <li class="Servicios-40">Desde 100€</li>
+                <li class="Servicios-41">Desde 100€</li>
+                <li class="Servicios-42">Desde 100€</li>
+            </ul>
+        </section>
+
+        <!-- formulario de reserva para pedir cita -->
+        <section id="pedir cita" class="Reserva">
+            <h2 class="Reserva-h2">Pide cita</h2>
+
+            <form class="Reserva-form" action="./reserva.html" method="get" target="_blank">
+
+                <label class="Form-fecha" for="fecha">Fecha</label>
+                <input class="Input-fecha" type="date" id="fecha" name="fecha" required>
+
+
+                <label class="Form-hora" for="hora">Hora</label>
+                <input class="Input-hora" type="time" id="hora" name="hora" required>
+
+
+                <label class="Form-service" for="servicio">Servicio</label>
+                <select class="Select-service" id="servicio" name="servicio" required>
+
+                    <optgroup label="Corte de pelo">
+                        <option value="corte-hombre">Corte Hombre</option>
+                        <option value="corte-mujer">Corte Mujer</option>
+                        <option value="corte-niño">Corte Niños</option>
+                    </optgroup>
+
+                    <optgroup label="Coloración">
+                        <option value="tinte">Tinte</option>
+                        <option value="balayage">Balayage</option>
+                        <option value="highlight">Highlights</option>
+                        <option value="airtouch">AirTouch</option>
+                    </optgroup>
+
+                    <optgroup label="Tratamientos">
+                        <option value="keratina">Keratina</option>
+                        <option value="hidratacion">Hidratación profunda</option>
+                        <option value="botox">Bótox</option>
+                        <option value="Extensiones">Extensiones</option>
+                        <option value="reparacion">Reparación capilar</option>
+                        <option value="nanoplastia">Nanoplastia</option>
+                    </optgroup>
+
+                </select>
+
+                <button class="Reserva-btn" type="submit">Reservar</button>
+            </form>
+        </section>
+
+        <!-- formulario de contacto con ubicación -->
+        <section class="Contacto">
+            <h2 id="contacto" class="Contacto-h2">Contacto</h2>
+            <article class="Form">
+
+                <form class="Contacto-form" action="URL" method="post">
+
+                    <div class="Contacto-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="Contacto-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tucorreo@gmail.com" required>
+                    </div>
+
+                    <div class="Contacto-group">
+                        <label for="movil">Móvil</label>
+                        <input type="tel" id="movil" name="móvil" placeholder="Móvil" required>
+                    </div>
+
+                    <div class="Contacto-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"
+                            required></textarea>
+                    </div>
+
+                    <button class="Contacto-btn" type="submit">Enviar</button>
+                    <!-- Crear pagina en blanco donde haya un texto : SU MENSAJE SE HA ENVIADO CON EXITO -->
+                </form>
+                <form class="Contacto-form" action="contacto.html" method="post" target="_blank">
+
+            </article>
+
+            <article class="Ubicacion">
+                <h3 class="Horario-h3">Horario</h3>
+                <div class="Horario">Lunes a Sábados: 10:00 a 20:00</div>
+
+                <h3 class="Direccion-h3">Encuéntranos aquí</h3>
+                <iframe class="Mapa-dir"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.312215151654!2d2.0865245124543623!3d41.47137767116958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a496e6373bef9d%3A0xb6dec228eb842c9f!2sCarrer%20Elies%20Rogent%2C%2014%2C%2008172%20Sant%20Cugat%20del%20Vall%C3%A8s%2C%20Barcelona!5e1!3m2!1ses!2ses!4v1745086119359!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+    </main>
+
+    <!-- pie de páginacon información -->
+    <footer class="Footer">
+        <div class="Footer-info">
+            <h3 class="Footer-h3">Información legal</h3>
+            <ul class="Law-ul">
+                <li class="Footer-li"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-c-circle" viewBox="0 0 16 16">
+                        <path
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512" />
+                    </svg> MONÉ BEAUTY STUDIO</li>
+                <li class="Footer-li"><a href="">Términos y Condiciones</a></li>
+                <li class="Footer-li"><a href="">Políticas de privacidad</a></li>
+                <li class="Footer-li"><a href="">Aviso legal</a></li>
+            </ul>
+        </div>
+
+        <div class="Footer-rrss">
+            <h3 class="Footer-h3">Siguenos en redes</h3>
+            <ul class="Redes-ul">
+                <li class="Redes-li"><a
+                        href="https://www.instagram.com/mone.beauty.studio?igsh=MTQ0NGZmbzlzNWZsYQ%3D%3D"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg> Instagram</a></li>
+                <li class="Redes-li"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg> Facebook</a></li>
+            </ul>
+        </div>
+
+        <div class="Footer-dir">
+            <h3 class="Footer-h3">Información</h3>
+            <ul class="Dir-ul">
+
+                <li class="Dir-li">Teléfono: 666 666 666</li>
+
+                <li class="Dir-li"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope-at" viewBox="0 0 16 16">
+                        <path
+                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                        <path
+                            d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 1s0.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                    </svg> monestudio@gmail.com</li>
+                <li class="Dir-li">Lunes a Sábado: 10:00 a 20:00h</li>
+                <li class="Dir-li">Dirección: <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.312215151654!2d2.0865245124543623!3d41.47137767116958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a497005d3f04db%3A0xa82894d73bf18609!2sMON%C3%89%20Beauty%20Studio!5e1!3m2!1ses!2ses!4v1745520749418!5m2!1ses!2ses"
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
