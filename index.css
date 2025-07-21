@@ -1,0 +1,801 @@
+/* RESET BÁSICO*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+p a {
+    display: inline;
+    text-decoration: underline;
+}
+
+img,
+picture,
+video,
+iframe {
+    display: block;
+    width: 100%;
+}
+
+svg {
+    color: currentColor;
+}
+
+form,
+input,
+label,
+select,
+option,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+}
+
+/*FIN RESET */
+
+/* estilo general */
+body {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #8c7157;
+    background-color: #f4ead5;
+}
+
+/* estilo encabezado */
+.Header {
+    background-color: #01452c;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+}
+
+.Header-h1 {
+    width: 20%;
+    margin: 1.875rem 4.375rem;
+    padding: .625rem;
+}
+
+.Header-nav {
+    width: 80%;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.Header-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3.125rem;
+    margin-right: 3.125rem;
+    padding: 1.875rem;
+}
+
+/* estilo de fondo */
+.Main-fondo {
+    margin: 3.125rem auto;
+}
+
+.Fondo-h2 {
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f4ead5c8;
+    border-radius: .625rem;
+    font-size: 3.125rem;
+}
+
+/* estilo de carrousel */
+.Carousel {
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Carousel-h2 {
+    font-size: 1.5rem;
+    margin: 1.875rem auto;
+    padding: .9375rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    box-shadow: 0 .125rem .625rem rgb(82, 78, 78);
+}
+
+.Carousel-galery {
+    width: 800%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.Carousel-first {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.Carousel-img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: .625rem;
+    background-color: #ccc;
+}
+
+.Carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    background-color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem, 1rem;
+    z-index: 10;
+    box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, 0.2);
+}
+
+.Carousel-arrow.Prev {
+    left: .625rem;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.Carousel-arrow.Next {
+    right: .625rem;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+/* estilo de formulario para reservas */
+.Reserva {
+    width: 50%;
+    margin: 3.125rem auto;
+    padding: 1.875rem;
+    background: #01452c;
+    box-shadow: 0 .125rem .625rem rgb(82, 78, 78);
+}
+
+.Reserva-h2 {
+    font-size: 1.5rem;
+    margin: 1.875rem auto;
+    padding: .9375rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    box-shadow: 0 .125rem .625rem rgb(82, 78, 78);
+}
+
+.Reserva-form {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: .5rem;
+
+}
+
+.Form-fecha {
+    grid-column-start: 2;
+}
+
+.Input-fecha {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+}
+
+.Form-hora {
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+}
+
+.Input-hora {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.Form-service {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.Select-service {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.Reserva-btn {
+    grid-column-start: 3;
+    grid-row-start: 5;
+    margin: auto;
+    padding: .75rem;
+    border: none;
+    border-radius: .625rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 1s ease;
+}
+
+.Reserva-volver {
+    margin-top: 3.125rem;
+    padding: .75rem;
+    border-radius: .625rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.Reserva-h1 {
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.Reserva-btn:hover {
+    transform: rotateX(360deg)
+}
+
+/* estilo de servicios */
+.Servicios {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 6.25rem;
+}
+
+.Servicos-h2 {
+    font-size: 1.5rem;
+    margin: 1.875rem auto;
+    padding: .9375rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    box-shadow: 0 .125rem .625rem rgb(82, 78, 78);
+    border-radius: 1.25rem;
+
+}
+
+.Servicios-primera {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    box-shadow: 0 .125rem .625rem rgb(82, 78, 78);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: .625rem;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+}
+
+.Servicios-1 {
+    grid-column: span 5 / span 5;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.Servicios-3 {
+    grid-row-start: 3;
+}
+
+.Servicios-4 {
+    grid-row-start: 4;
+}
+
+.Servicios-5 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.Servicios-6 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.Servicios-7 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.Servicios-segunda {
+    width: 80%;
+    margin: 3.125rem auto;
+    display: grid;
+    box-shadow: 0 .125rem .625rem rgb(82, 78, 78);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: .625rem;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+}
+
+.Servicios-11 {
+    grid-column: span 5 / span 5;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.Servicios-12 {
+    grid-row-start: 2;
+}
+
+.Servicios-13 {
+    grid-row-start: 3;
+}
+
+.Servicios-14 {
+    grid-row-start: 4;
+}
+
+.Servicios-15 {
+    grid-row-start: 5;
+}
+
+.Servicios-16 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.Servicios-17 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.Servicios-18 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.Servicios-19 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
+.Servicios-tercera {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    box-shadow: 0 .125rem .625rem rgb(82, 78, 78);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: .625rem;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+}
+
+.Servicios-24 {
+    grid-column: span 5 / span 5;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.Servicios-25 {
+    grid-row-start: 2;
+}
+
+.Servicios-26 {
+    grid-row-start: 3;
+}
+
+.Servicios-27 {
+    grid-row-start: 4;
+}
+
+.Servicios-28 {
+    grid-row-start: 5;
+}
+
+.Servicios-29 {
+    grid-row-start: 6;
+}
+
+.Servicios-30 {
+    grid-row-start: 7;
+}
+
+.Servicios-31 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.Servicios-32 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.Servicios-33 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.Servicios-34 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
+.Servicios-35 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 6;
+}
+
+.Servicios-36 {
+    grid-column: span 3/ span 3;
+    grid-column-start: 2;
+    grid-row-start: 7;
+}
+
+/* estilo de contacto */
+.Contacto {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3.125rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Contacto-h2 {
+    width: 100%;
+    height: 5rem;
+    margin: 1.875rem auto;
+    padding: .9375rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    box-shadow: 0 .125rem .625rem rgb(82, 78, 78);
+    border-radius: 1.25rem;
+    grid-column-start: span 2;
+}
+
+.Form {
+    padding: 1.875rem;
+}
+
+.Contacto-group {
+    padding: 1.25rem;
+    background-color: rgba(211, 211, 211, 0.221);
+
+}
+
+.Contacto-btn {
+    margin: auto;
+    padding: .75rem;
+    border: none;
+    border-radius: .625rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.Contacto-volver {
+    margin-top: 3.125rem;
+    padding: .75rem;
+    border-radius: .625rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.Ubicacion {
+    padding: 1.875rem;
+}
+
+.Horario-h3 {
+    padding: 1.25rem;
+    text-decoration: underline;
+    background-color: rgba(211, 211, 211, 0.221);
+    border-radius: .625rem;
+    margin-bottom: .625rem;
+}
+
+.Horario {
+    padding: 1.25rem;
+    background-color: rgba(211, 211, 211, 0.221);
+    border-radius: .625rem;
+    margin-bottom: .625rem;
+}
+
+.Direccion-h3 {
+    padding: 1.25rem;
+    text-decoration: underline;
+    background-color: rgba(211, 211, 211, 0.221);
+    border-radius: .625rem;
+    margin-bottom: .625rem;
+}
+
+.Mapa-dir {
+    padding: 1.25rem;
+}
+
+.Historia {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 3.125rem;
+}
+
+.Historia-der {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.Historia-h2 {
+    width: 100%;
+    height: 5rem;
+    margin: 1.875rem auto;
+    padding: .9375rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    box-shadow: 0 .125rem .625rem rgb(82, 78, 78);
+    border-radius: 1.25rem;
+    grid-column-start: span 2;
+}
+
+.Historia-p {
+    margin: auto;
+}
+
+.Historia-ul {
+    padding: 1.875rem;
+    margin: auto;
+}
+
+.Img-historia {
+    padding: 1.875rem;
+}
+
+/* estilo de pie de página */
+.Footer {
+    background-color: #01452c;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1.875rem;
+    color: white;
+}
+
+.Footer-h3 {
+    padding: 1.25rem;
+    text-decoration: underline;
+    background-color: rgba(211, 211, 211, 0.221);
+    border-radius: .625rem;
+    margin-bottom: .625rem;
+}
+
+.Law-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .75rem;
+
+}
+
+.Redes-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    padding: 1.875rem;
+}
+
+.Dir-ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .75rem;
+}
+
+/* Media Queries */
+/* Móvil pequeño 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .Header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Header-h1, .Header-nav {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .Header-ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .Fondo-h2 {
+        width: 80%;
+        top: auto;
+        left: auto;
+        transform: translate(60px, -130px);
+    }
+
+    .Carousel-img {
+        height: 40vh;
+    }
+
+    .Reserva {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .Reserva-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .Servicios-primera,
+    .Servicios-segunda,
+    .Servicios-tercera {
+        grid-template-columns: 1fr;
+    }
+
+    .Contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Tablet 768px */
+@media (max-width: 768px) {
+    .Carousel-img {
+        height: 50vh;
+    }
+
+    .Fondo-h2 {
+        font-size: 2rem;
+        width: 80%;
+        top: auto;
+        left: auto;
+        transform: translate(60px, -180px);
+    }
+
+    .Reserva {
+        width: 80%;
+    }
+
+    .Contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .Servicios-primera,
+    .Servicios-segunda,
+    .Servicios-tercera {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Laptop pequeña 1024px */
+@media (max-width: 1024px) {
+    .Header-ul {
+        gap: 1.5rem;
+    }
+
+    .Carousel-img {
+        height: 60vh;
+    }
+
+    .Reserva {
+        width: 70%;
+    }
+}
+
+/* Menú hamburguesa: oculto en escritorio */
+.Hamburger-btn {
+    display: none;
+    background: none;
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+/* Estilo del SVG */
+.Hamburger-icon {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+/* Móvil: mostrar botón, ocultar menú normal */
+@media (max-width: 1024px) {
+    .Hamburger-btn {
+        display: block;
+    }
+
+    .Header-nav {
+        display: none;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .Header-nav.active {
+        display: flex;
+    }
+
+    .Header-ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+}
